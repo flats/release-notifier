@@ -1,6 +1,7 @@
 GEM
   remote: https://rubygems.org/
   specs:
+    diff-lcs (1.2.5)
     dotenv (2.1.1)
     httparty (0.14.0)
       multi_xml (>= 0.5.2)
@@ -8,6 +9,19 @@ GEM
     rack (1.6.4)
     rack-protection (1.5.3)
       rack
+    rspec (3.5.0)
+      rspec-core (~> 3.5.0)
+      rspec-expectations (~> 3.5.0)
+      rspec-mocks (~> 3.5.0)
+    rspec-core (3.5.4)
+      rspec-support (~> 3.5.0)
+    rspec-expectations (3.5.0)
+      diff-lcs (>= 1.2.0, < 2.0)
+      rspec-support (~> 3.5.0)
+    rspec-mocks (3.5.0)
+      diff-lcs (>= 1.2.0, < 2.0)
+      rspec-support (~> 3.5.0)
+    rspec-support (3.5.0)
     sinatra (1.4.7)
       rack (~> 1.5)
       rack-protection (~> 1.4)
@@ -20,7 +34,8 @@ PLATFORMS
 DEPENDENCIES
   dotenv
   httparty
+  rspec
   sinatra
 
 BUNDLED WITH
-   1.11.2
+   1.12.3
